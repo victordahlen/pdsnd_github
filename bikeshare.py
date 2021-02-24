@@ -25,12 +25,11 @@ def get_filters():
     print('\n Hello! Let\'s explore some US bikeshare data! \n')
 
     while True:
-
         city = input('\n Please select the city you want to look at by typing "chicago", "new york city" or "washington": ')
         if city.lower() in CITY_DATA.keys():
             break
         else:
-            print('{} is not a valid city!'.format(city))
+            print('{} is not a valid city! Please input another city. \n'.format(city))
 
 
     # get user input for month (all, january, february, ... , june)
@@ -41,7 +40,7 @@ def get_filters():
         elif month.lower() == 'all':
             break
         else:
-            print('{} is not a valid month!'.format(month))
+            print('{} is not a valid month! Please input another month. \n'.format(month))
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
@@ -51,7 +50,7 @@ def get_filters():
         elif day.lower() == 'all':
             break
         else:
-            print('{} is not a valid day! \n'.format(day))
+            print('{} is not a valid day! Please input another day. \n'.format(day))
 
     print('-'*40)
     return city.lower(), month.lower(), day.lower()
@@ -169,9 +168,7 @@ def user_stats(df, city):
 
 def raw_data(df):
     """Asks user if interested in seeing raw data and displays raw data 5 rows at a time"""
-
-    # get user input if user wants to see raw data
-    see_raw_data = input('Do you want to inspect the raw data? Enter "y", otherwise enter another letter/character : ')
+    see_raw_data = input('Do you want to inspect the raw data? Enter y or n : ')
     if see_raw_data == 'y':
         i = 0
         while True:
@@ -181,7 +178,7 @@ def raw_data(df):
 
             print(df.iloc[i:i+5])
             i +=5
-            next_rows = input('Do you want to inspect the next five rows? Enter y, otherwise type another letter/character : ')
+            next_rows = input('Do you want to inspect the next five rows? Enter y or n : ')
             if next_rows.lower() != 'y':
                 break
 
