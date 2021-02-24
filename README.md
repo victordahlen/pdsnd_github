@@ -8,7 +8,10 @@ Udacity Git Project
 A project written in Python that analyses bikeshare data for Washington, New York City and Chicago. An interactive application in the terminal.
 
 ### Files used
-Include the files used
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity Course Material
+Pandas documentation - https://pandas.pydata.org/docs/
