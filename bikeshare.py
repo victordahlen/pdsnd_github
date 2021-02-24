@@ -6,6 +6,7 @@ import pandas as pd
 months = ['january', 'february', 'march', 'april', 'may', 'june']
 days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
+#dictionary of files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -168,6 +169,8 @@ def user_stats(df, city):
 
 def raw_data(df):
     """Asks user if interested in seeing raw data and displays raw data 5 rows at a time"""
+
+    # get user input if user wants to see raw data
     see_raw_data = input('Do you want to inspect the raw data? Enter "y", otherwise enter another letter/character : ')
     if see_raw_data == 'y':
         i = 0
