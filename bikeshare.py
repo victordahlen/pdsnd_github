@@ -24,7 +24,6 @@ def get_filters():
     print('\n Hello! Let\'s explore some US bikeshare data! \n')
 
     while True:
-
         city = input('\n Please select the city you want to look at by typing "chicago", "new york city" or "washington": ')
         if city.lower() in CITY_DATA.keys():
             break
