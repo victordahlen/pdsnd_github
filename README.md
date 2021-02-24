@@ -13,5 +13,5 @@ A project written in Python that analyses bikeshare data for Washington, New Yor
 - washington.csv
 
 ### Credits
-Udacity Course Material
-Pandas documentation - https://pandas.pydata.org/docs/
+- Udacity Course Material
+- Pandas documentation - https://pandas.pydata.org/docs/
