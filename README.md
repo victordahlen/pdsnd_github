@@ -5,7 +5,7 @@
 Udacity Git Project
 
 ### Description
-Describe what your project is about and what it does
+A project written in Python that analyses bikeshare data for Washington, New York City and Chicago. An interactive application in the terminal.
 
 ### Files used
 Include the files used
