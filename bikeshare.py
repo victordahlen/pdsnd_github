@@ -168,7 +168,7 @@ def user_stats(df, city):
 
 def raw_data(df):
     """Asks user if interested in seeing raw data and displays raw data 5 rows at a time"""
-    see_raw_data = input('Do you want to inspect the raw data? Enter "y", otherwise enter another letter/character : ')
+    see_raw_data = input('Do you want to inspect the raw data? Enter y or n : ')
     if see_raw_data == 'y':
         i = 0
         while True:
@@ -178,7 +178,7 @@ def raw_data(df):
 
             print(df.iloc[i:i+5])
             i +=5
-            next_rows = input('Do you want to inspect the next five rows? Enter y, otherwise type another letter/character : ')
+            next_rows = input('Do you want to inspect the next five rows? Enter y or n : ')
             if next_rows.lower() != 'y':
                 break
 
